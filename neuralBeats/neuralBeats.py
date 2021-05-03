@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import numpy as np
 import wave
 import matplotlib.pyplot as plt
@@ -150,8 +151,7 @@ def analyze_song(song_name):
 
 
 if __name__ == "__main__":
-    # song_name = call_spotify()
+    song_name = call_spotify()
     start_time = time.time()
-    song_name = "Test/Rise Up"
     analyze_song(song_name)
     print("--- %s seconds ---" % (time.time() - start_time))

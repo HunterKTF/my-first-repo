@@ -1,0 +1,144 @@
+To-Do:
+* Modelado Orientado a Objetos:
+	> Actividad de diagrama de secuencias
+	> Proyecto Final
+		> 1.	Crear una lista de los objetos potenciales aplicando alguna técnica estudiada (los nombres, por ejemplo). (15 puntos)
+		> 2.	Filtrar esta lista según los criterios vistos en clase. (5 puntos)
+		> 3.	Definir y especificar los atributos de los objetos. (10 puntos)
+		> 4.	Definir y especificar los servicios de los objetos. (10 puntos)
+		> 5.	Definir y especificar las relaciones entre las clases ya definidas en los pasos anteriores y generar el diagrama de clases. (10 puntos)
+		> 6.	Definir y generar el diagrama de contexto y los diagramas de casos de uso según los diferentes escenarios (los diagramas de secuencia). (15 puntos)
+		> 7.	Documentar los casos de uso (10 puntos)
+		> 8.	Documentar todo el proceso anterior, es importante dejar evidencias de la aplicación de las técnicas para hacer el análisis y diseño. (15 puntos)
+		> 9.	Presentación general del trabajo (limpieza, uso de herramienta, etc.) (10 puntos)
+		** Procedimiento por definir
+		
+* Laboratorio de Automatización de la Manufactura (1):
+	> Proyecto Final
+		> 1. El usuario inicia el sistema presionando el botón de INICIO del panel de control.
+		> 2. En este momento, la banda comienza su movimiento y las botellas comienzan a ser ingresadas desde la parte izquierda de la banda con un intervalo de tiempo de 5 segundos entre botellas
+			consecutivas.
+		> 3. Cuando una botella es detectada por el detector de proximidad 1, la banda para, se genera un retardo de 1 segundo y posteriormente el llenado de liquido comienza, teniendo el proceso de
+			llenado una duración de 5 segundos. Posterior a esto, hay un retardo de 1 segundo antes de que la banda comience su movimiento nuevamente.
+		> 4. La banda reanuda su movimiento, siguiendo con el ingreso de nuevas botellas y moviendo las
+		botellas ya llenas hacia el sistema de sellado (colocación de tapa). Si la línea de producción
+		fue iniciada por primera vez, deberá pasar un tiempo tal, que entre el sistema de llenado y
+		el sistema de sellado hayan avanzado cinco botellas. En tal caso, el detector de proximidad 2
+		detectará una botella y activará el proceso de sellado.
+		> 5. Al activarse el proceso de sellado la banda deberá parar nuevamente.
+		> 6. Se genera un retardo de 1 segundo y posteriormente el sellado se realiza en un tiempo de 2
+		segundos, seguido de un retardo de 1 segundo antes de reanudar el movimiento de la banda.
+		> 7. Si la línea de producción fue iniciada por primera vez, deberá pasar un tiempo tal, que entre el
+		sistema de sellado y el sistema de estampado hayan avanzado cuatro botellas. En tal caso, el
+		detector de proximidad 3 detectará una botella y activará el proceso de estampado.
+		> 8. Al activarse el proceso de estampado la banda deberá parar nuevamente.
+		> 9. Se genera un retardo de 1 segundo y posteriormente el estampado se realiza en un tiempo de 3
+		segundos, seguido de un retardo de 1 segundo antes de reanudar el movimiento de la banda.
+		> 10. Si la línea de producción fue iniciada por primera vez, deberá pasar un tiempo tal, que entre
+		el sistema de estampado y el área de recolección hayan avanzado tres botellas. En tal caso, la
+		botella caerá a la contenedor de recolección.
+		> 11. Después de que la primer botella, en un arranque en frio (cuando la línea se enciende por primera vez), haya llegado al contenedor de recolección, significa que no habrá espacios vacios
+			donde potencialmente pueda haber una botella. Es decir, las botellas estarán en la banda en posiciones continuas.
+		
+		* Para el sistema de automatización de llenado, sellado y estampado de botellas se deberán obtener las siguientes estadísticas:
+			> Número de botellas producidas por hora
+			> Número de cajas producidas por hora
+			> Número de tapas utilizadas por hora (1 por botella)
+			> Número de estampas utilizadas por hora (1 por botella)
+		* En términos de costos y ganancias de producción, se deberá calcular lo siguiente:
+			> Calcular el costo de producción por hora si el costo unitario por botella es de MX$1.50.
+			> Calcular el margen de ganancia por hora, si cada botella es vendida en MX$2.50.
+			
+		* El reporte técnico que deberá contener los siguientes apartados:
+			(5 pts) Pagina de presentación: Universidad de Monterrey, departamento de ingenierías, nombre de la práctica, nombre de los integrantes del equipo, y lugar y fecha de elaboración de la práctica.
+		
+		* Desarrollo de la práctica incluyendo:
+			(10 pts) Introduction al problema
+			(5 pts) Objetivos
+			(5 pts) Definición de variables de entrada y salidas
+			(30 pts) Descripción de la programación en escalera
+			(30 pts) Descripción de la simulación usando el panel de simulación de Do-More.
+			(5 pts) Enlaces al video demostrativo de las simulaciones. Este video deberán ser subido al directorio de Drive que el profesor compartió con el equipo de trabajo al inicio del
+					semestre, en el mismo folder donde el reporte PDF resida.
+			(10 pts) Conclusiones individuales
+		
+		* Seguido a las conclusiones individuales, la siguiente declaración deberá ser incluida en el reporte:
+		 'Los integrantes de este equipo confirmamos que el contenido incluido en este reporte de laboratorio no ha sido copiado de ningún otro trabajo, y confirmamos que hemos leído y entendido el
+		  Reglamento de Evaluación de Estudiantes de Profesional de la Universidad de Monterrey UDEM'
+		
+		* Referente al video demostrativo, se especifica lo siguiente:
+			(5 pts) Todos los miembros del equipo deberán participar en la explicación del video.
+			(5 pts) Este deberá ser generado con una resolución mínima de 1920 x 1080 pixels.
+			(5 pts) Información de presentación (10 segundos)
+			(5 pts) Introduction al problema
+			(5 pts) Objetivos
+			(5 pts) Definición de variables de entrada y salidas
+			(30 pts) Descripción de la programación en escalera
+			(30 pts) Descripción de la simulación usando el panel de simulación de Do-More.
+			(5 pts) Conclusiones individuales
+			(5 pts) Información de presentación al final (15 segundos)
+			
+		* En cuanto a la presentación (tiempo de presentación: 15 min), esta será un extracto del reporte técnico, conteniendo la misma información, pero de manera resumida.
+			(5 pts) Pagina de presentación: Universidad de Monterrey, departamento de ingenierías, nombre de la práctica, nombre de los integrantes del equipo, y lugar y fecha de elaboración de la
+			práctica.
+			Desarrollo de la práctica incluyendo:
+			(10 pts) Introduction al problema
+			(5 pts) Objetivos
+			(5 pts) Definición de variables de entrada y salidas
+			(30 pts) Descripción de la programación en escalera
+			(30 pts) Descripción de la simulación usando el panel de simulación de Do-More.
+			(5 pts) Enlaces al video demostrativo de las simulaciones. Este video deberán ser subido al directorio de Drive que el profesor compartió con el equipo de trabajo al inicio del
+					semestre, en el mismo folder donde el reporte PDF resida.
+			(10 pts) Conclusiones individuales
+			
+* Laboratorio de Automatización de la Manufactura (2):
+	> Proyecto Final
+		> Follow-thru the document
+		
+* Sistemas de Control en Tiempo Real:
+	> Actividad Evaluable de Logica Difusa
+	> Proyecto Final
+		> Diseñar circuto de conexiones
+		> Diseñar planta física
+		> Construir planta
+		> Caracterizar planta
+		> Realizar prueba con software
+		> Realizar prueba con POT
+		> Realizar implementacion de control por musica
+		> Prueba final con musica
+		
+* Proyecto Integrador Mecatronica:
+	> Simulacion de Circuito en SimulIDE
+	> Proyecto Final
+		> Probar sensores y actuadores en el PIC
+		> Soldar todos los componentes
+		> Realizar caracterizacion de componentes
+		> Calibracion de componentes
+		> Realizar codigo de control basico
+		> Realizar codigo de comunicacion basico
+		> Realizar codigo de vuelo completo
+		> Realizar codigo de sensor de distancia
+		> Pruebas finales de dron
+		
+* Practicas Profesionales:
+	> Extraer señales de PWM de las bandas correspondientes
+	> Hacer codigo para pasar PWM a tivaware (bytes o bits)
+	> Hacer codigo para multiprocesamiento
+	> ** Hacer codigo con GPU
+	
+* Servicio Social:
+	> Revisar videos
+	> Ir por la carta de vacunacion
+
+* MIT:
+	> Caso de estudio 5
+	> Caso de estudio 6
+	
+* Valiot:
+	> Pedir teensy a Jose
+	> Realizar circuito BME
+	> Revisar componentes nuevos del Penta en 'moduloIO'
+	> Terminar BOM del Penta
+	> Enviar correo para pedir cotizacion de PCBs
+	> Realizar primer version de automatizacion de BOMs
+	
